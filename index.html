@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rubik's Cube Slides</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2df0d",
+                        "primary-dark": "#d1c00b",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#222110",
+                        "cube-blue": "#0e2a47",
+                        "cube-blue-light": "#1a4b7c",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+    <section class="relative overflow-hidden bg-cube-blue py-16 sm:py-24 lg:py-32" id="hero-form">
+        <div class="absolute inset-0 z-0 opacity-10"
+            style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
+        <div class="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-blue-500 blur-[120px] opacity-20"></div>
+        <div class="absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-primary blur-[100px] opacity-10"></div>
+        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+                <div class="flex flex-col items-start gap-6 text-left">
+                    <div
+                        class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-sm border border-white/10">
+                        <span class="mr-2 h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+                        Rubik's Cube Hobby Class Resource
+                    </div>
+                    <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                        Download the Exact Slides Used In Today's <span class="text-primary">Rubik's Cube Class</span>
+                        🧩
+                    </h1>
+                    <p class="text-lg text-blue-100 sm:text-xl max-w-lg leading-relaxed">
+                        Plus get the complete <strong>Rubik’s Cube Home Practice Pack</strong> to help your child revise
+                        and improve at home.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="flex h-6 w-6 items-center justify-center rounded-full bg-green-500/20 text-green-400">
+                                <span class="material-symbols-outlined text-lg">check</span>
+                            </span>
+                            <span class="text-white font-medium">Algorithm Cheat Sheet (Live class Slides)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="flex h-6 w-6 items-center justify-center rounded-full bg-green-500/20 text-green-400">
+                                <span class="material-symbols-outlined text-lg">check</span>
+                            </span>
+                            <span class="text-white font-medium">Weekly Practice Companion</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="flex h-6 w-6 items-center justify-center rounded-full bg-green-500/20 text-green-400">
+                                <span class="material-symbols-outlined text-lg">check</span>
+                            </span>
+                            <span class="text-white font-medium">Beginner Mistake Guide</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="flex h-6 w-6 items-center justify-center rounded-full bg-green-500/20 text-green-400">
+                                <span class="material-symbols-outlined text-lg">check</span>
+                            </span>
+                            <span class="text-white font-medium">Brain Development Guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl bg-white p-6 shadow-2xl sm:p-8 lg:p-10 border border-white/20">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-slate-900">Get Instant Access</h2>
+                            <p class="mt-1 text-sm text-slate-600">Fill in the details to receive the PPT &amp; Practice
+                                Pack.</p>
+                        </div>
+                        <form action="thank-you.html" class="space-y-4" method="GET">
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <div class="sm:col-span-2">
+                                    <label class="block text-sm font-semibold text-slate-700" for="parent-name">Parent
+                                        Name</label>
+                                    <input
+                                        class="mt-1.5 block w-full rounded-lg border-gray-300 bg-gray-50 px-4 py-2.5 text-slate-900 focus:border-cube-blue-light focus:ring-cube-blue-light"
+                                        id="parent-name" name="parent-name" placeholder="Enter your name" required=""
+                                        type="text" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700" for="child-name">Child
+                                        Name</label>
+                                    <input
+                                        class="mt-1.5 block w-full rounded-lg border-gray-300 bg-gray-50 px-4 py-2.5 text-slate-900 focus:border-cube-blue-light focus:ring-cube-blue-light"
+                                        id="child-name" name="child-name" placeholder="Enter child's name" required=""
+                                        type="text" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700" for="child-age">Child's
+                                        Age</label>
+                                    <select
+                                        class="mt-1.5 block w-full rounded-lg border-gray-300 bg-gray-50 px-4 py-2.5 text-slate-900 focus:border-cube-blue-light focus:ring-cube-blue-light"
+                                        id="child-age" name="child-age" required="">
+                                        <option disabled="" selected="" value="">Select age</option>
+                                        <option value="5">5 Years</option>
+                                        <option value="6">6 Years</option>
+                                        <option value="7">7 Years</option>
+                                        <option value="8">8 Years</option>
+                                        <option value="9">9 Years</option>
+                                        <option value="10">10 Years</option>
+                                        <option value="11">11 Years</option>
+                                        <option value="12">12 Years</option>
+                                        <option value="13">13 Years</option>
+                                        <option value="14">14 Years</option>
+                                        <option value="15+">15+ Years</option>
+                                    </select>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block text-sm font-semibold text-slate-700" for="email">Email
+                                        Address</label>
+                                    <input
+                                        class="mt-1.5 block w-full rounded-lg border-gray-300 bg-gray-50 px-4 py-2.5 text-slate-900 focus:border-cube-blue-light focus:ring-cube-blue-light"
+                                        id="email" name="email" placeholder="name@example.com" required=""
+                                        type="email" />
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block text-sm font-semibold text-slate-700" for="whatsapp">WhatsApp
+                                        Number</label>
+                                    <div class="relative mt-1.5 flex gap-2">
+                                        <div class="w-32 shrink-0">
+                                            <select
+                                                class="block w-full rounded-lg border-gray-300 bg-gray-50 px-3 py-2.5 text-slate-900 focus:border-cube-blue-light focus:ring-cube-blue-light text-sm"
+                                                id="country-code" name="country-code" required="">
+                                                <option selected="" value="+91">🇮🇳 +91</option>
+                                                <option value="+1">🇺🇸 +1</option>
+                                                <option value="+44">🇬🇧 +44</option>
+                                                <option value="+971">🇦🇪 +971</option>
+                                                <option value="+65">🇸🇬 +65</option>
+                                                <option value="+61">🇦🇺 +61</option>
+                                                <option value="+1">🇨🇦 +1</option>
+                                            </select>
+                                        </div>
+                                        <div class="relative flex-grow">
+                                            <div
+                                                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                                <span
+                                                    class="material-symbols-outlined text-gray-400 text-[20px]">call</span>
+                                            </div>
+                                            <input
+                                                class="block w-full rounded-lg border-gray-300 bg-gray-50 pl-10 pr-4 py-2.5 text-slate-900 focus:border-cube-blue-light focus:ring-cube-blue-light"
+                                                id="whatsapp" name="whatsapp" placeholder="Enter WhatsApp number"
+                                                required="" type="tel" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 w-full rounded-lg bg-primary py-4 text-center text-lg font-bold text-slate-900 shadow-lg shadow-yellow-500/20 transition-all hover:bg-primary-dark"
+                                type="submit">
+                                Send Me The Practice Pack
+                            </button>
+                            <p class="text-center text-[10px] text-slate-400 uppercase tracking-wider font-semibold">
+                                🔒 100% Privacy Guaranteed
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                    What You'll Receive Instantly After Signing Up
+                </h2>
+                <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Everything you need to help your child master
+                    the cube and boost their confidence.</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div
+                    class="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-gray-100 dark:border-white/10">
+                    <div
+                        class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
+                        <span class="material-symbols-outlined text-2xl">menu_book</span>
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Algorithm Cheat Sheet</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">The exact slides from our live class in a
+                        printable reference PDF format.</p>
+                </div>
+                <div
+                    class="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-gray-100 dark:border-white/10">
+                    <div
+                        class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400">
+                        <span class="material-symbols-outlined text-2xl">calendar_month</span>
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Weekly Practice Companion</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">A structured 7-day plan to track daily
+                        progress and build muscle memory.</p>
+                </div>
+                <div
+                    class="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-gray-100 dark:border-white/10">
+                    <div
+                        class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400">
+                        <span class="material-symbols-outlined text-2xl">block</span>
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Beginner Mistake Guide</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Learn to avoid the common pitfalls that slow
+                        down new cubers.</p>
+                </div>
+                <div
+                    class="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-gray-100 dark:border-white/10">
+                    <div
+                        class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400">
+                        <span class="material-symbols-outlined text-2xl">psychology</span>
+                    </div>
+                    <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Brain Development Guide</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Understand the cognitive benefits: improved
+                        focus, patience, and logic.</p>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <a class="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-center text-lg font-bold text-slate-900 shadow-lg shadow-yellow-500/20 transition-all hover:bg-primary-dark hover:-translate-y-0.5"
+                    href="#hero-form">
+                    Get Instant Access Now
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-50 dark:bg-white/5 py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-16">
+                <div class="relative shrink-0">
+                    <div class="absolute inset-0 rounded-full bg-primary blur-md opacity-40 translate-y-2"></div>
+                    <div
+                        class="h-48 w-48 overflow-hidden rounded-full border-4 border-white dark:border-gray-700 shadow-xl relative z-10">
+                        <div class="h-full w-full bg-cover bg-center"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBS9U6uF6p12zSNlAfPz4sglJP00ygVL6jrOYR4SqSkcv6UWlGogf9g-QjVHyfeUoX_1mn-bMysSPwU4OBVFzkpIJ-P0uGtm2M1Exo_z3wOmOZ2wgF1sdvJXM_lDH9xGk9KQ6VMAdfpMVBoPVNDnntGDn6kNbSQYBSD8GyQkkGt8gamDRlOAJkMx6rv9WAjcgUPU_-JnisdyvYQFXmVQ_7lC7jrAfsoNZonm-Y5aea-7W4UE8IVpVliaFWeuXKEXTXYKkqnUdWWg9U\&quot;&quot;');">
+                        </div>
+                    </div>
+                    <div
+                        class="absolute -bottom-2 -right-2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-md text-yellow-500">
+                        <span class="material-symbols-outlined fill-current">emoji_events</span>
+                    </div>
+                </div>
+                <div class="max-w-lg text-center md:text-left">
+                    <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">About the
+                        Trainer: Yash Chaudhary</h2>
+                    <div class="mt-4 space-y-4 text-slate-600 dark:text-slate-300">
+                        <p class="font-medium text-primary-dark dark:text-primary">7+ Years Experience • 3000+ Students
+                            • Guinness World Record Participant</p>
+                        <p>
+                            Yash is a renowned speedcuber dedicated to teaching the next generation of problem solvers.
+                            His unique teaching method breaks down complex algorithms into fun, memorable stories that
+                            kids love.
+                        </p>
+                        <p>
+                            "My goal is to show every child that they are smarter than they think. Solving the cube is
+                            just the beginning."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark border-t border-gray-100 dark:border-white/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">What Other
+                    Parents Say</h2>
+                <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Join thousands of happy families who've seen
+                    their children's focus and confidence soar.</p>
+            </div>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div
+                    class="flex flex-col rounded-2xl bg-white dark:bg-white/5 p-8 shadow-sm border border-gray-100 dark:border-white/10">
+                    <div class="mb-4 flex text-primary">
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                    </div>
+                    <p class="flex-grow text-lg italic text-slate-700 dark:text-slate-300">"My son loves the classes! He
+                        used to struggle with focus, but now he spends hours calmly practicing his algorithms. Yash is a
+                        fantastic teacher."</p>
+                    <div class="mt-6 border-t border-gray-100 dark:border-white/10 pt-6">
+                        <p class="font-bold text-slate-900 dark:text-white">Sarah Jenkins</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Mother of 8-year-old Liam</p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col rounded-2xl bg-white dark:bg-white/5 p-8 shadow-sm border border-gray-100 dark:border-white/10">
+                    <div class="mb-4 flex text-primary">
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                    </div>
+                    <p class="flex-grow text-lg italic text-slate-700 dark:text-slate-300">"The Home Practice Pack is a
+                        lifesaver. It makes it so easy for my daughter to practice what she learned in class without
+                        getting frustrated."</p>
+                    <div class="mt-6 border-t border-gray-100 dark:border-white/10 pt-6">
+                        <p class="font-bold text-slate-900 dark:text-white">Priya Sharma</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Mother of 10-year-old Anika</p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col rounded-2xl bg-white dark:bg-white/5 p-8 shadow-sm border border-gray-100 dark:border-white/10">
+                    <div class="mb-4 flex text-primary">
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                        <span class="material-symbols-outlined fill-current">star</span>
+                    </div>
+                    <p class="flex-grow text-lg italic text-slate-700 dark:text-slate-300">"Highly recommended! The
+                        transformation in my daughter's logical thinking skills in just a few weeks has been incredible
+                        to watch."</p>
+                    <div class="mt-6 border-t border-gray-100 dark:border-white/10 pt-6">
+                        <p class="font-bold text-slate-900 dark:text-white">David Thompson</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Father of 12-year-old Chloe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 flex flex-col items-center justify-center gap-6">
+                <a class="inline-flex items-center justify-center rounded-lg bg-primary px-10 py-5 text-center text-xl font-bold text-slate-900 shadow-xl shadow-yellow-500/30 transition-all hover:bg-primary-dark hover:-translate-y-1"
+                    href="#hero-form">
+                    Get Instant Access Now
+                </a>
+                <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">Limited spots available for our next
+                    live demo class!</p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-900 py-12">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-6 flex justify-center gap-6">
+                <a class="text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+            </div>
+            <p class="text-xs text-gray-500">© 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
